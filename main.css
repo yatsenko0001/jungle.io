@@ -1,0 +1,178 @@
+* {
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: sans-serif;
+}
+
+body{
+
+	overflow-x: hidden;
+	background: #fff;
+	min-height: 100vh;
+}
+
+header {
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 100px;
+    z-index: 10000;
+    transition: 0.5s;
+}
+header.sticky {
+background: #000;
+padding: 40px 100px;
+
+}
+header ul li a.sticky{
+	color: #fff;
+	border: 2px solid #094b65;
+}
+header .logo {
+
+color: #fff;
+font-weight: 700;
+text-decoration: none;
+font-size: 2.5em;
+color: #094b65;
+
+}
+
+header ul {
+
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+header ul li {
+	list-style: none;
+	padding-left: 30px;
+}
+
+header ul li a { 
+text-decoration: none;
+position: relative;
+background: none;
+color: #fff;
+padding: 6px 10px;
+border-radius: 20px;
+font-weight: 600;
+color: #094b65;
+ }
+
+ header ul li .active {
+position: relative;
+background: #094b65;
+color: #fff;
+padding: 6px 10px;
+border-radius: 20px;
+
+
+ }
+  header ul li a:hover{
+
+background: #094b65;
+color: #fff;
+font-weight: 600;
+padding: 10px;
+border-radius: 20px;
+  
+}
+
+section {
+
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+section::before {
+
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	background: linear-gradient(to top, #094b65, transparent);
+	z-index: 10;
+}
+
+section img { 
+
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+pointer-events: none;
+ }
+
+section #text { 
+position: absolute;
+color: #094b65;
+font-size: 10vw;
+text-align: center;
+line-height: 0.55em;
+ 	font-family: 'Rancho', cursive;
+ 	transform: translateY(-50%);
+ }
+
+ section #text span {
+
+ 	font-size: 0.20em;
+ 	letter-spacing: 2px;
+ 	font-weight: 400;
+ 	text-align: center;
+ 	font-family: 'Rancho', cursive;
+ }
+
+ #btn {
+
+ 	text-decoration: none;
+ 	display: inline-block;
+ 	padding: 8px 30px;
+ 	background: #fff;
+ 	color: #094b65;
+ 	font-size: 1.2em;
+ 	font-weight: 500;
+ 	border-radius: 40px;
+ 	letter-spacing: 2px;
+ 	transform: translateY(100px);
+ }
+
+ .sec { 
+position: relative;
+padding: 100px;
+background: #094b65;
+ }
+
+ .sec h2 {
+font-size: 3.5em;
+color: #fff;
+margin-bottom: 10px;
+
+ }
+ .sec p { 
+
+color: #fff;
+font-size: 1em;
+  }
+
+.we {
+
+	padding: 0 100px;
+}
